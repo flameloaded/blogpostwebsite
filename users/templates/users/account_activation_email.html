@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+    Account Activation
+    Hello {{ user.username }}
+    Thank you for registering. Please click the link below to activate your account:
+    http://{{ domain }}{% url 'activate' uidb64=uid token=token %}" Activate your account
+    If you didn't register on our website, please ignore this email.
+    Best regards,
+    Your Website Team
+{% endautoescape %}
